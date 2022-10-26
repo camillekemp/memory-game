@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 25, 2022 at 02:48 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Hôte : 127.0.0.1
+-- Généré le : mer. 26 oct. 2022 à 11:40
+-- Version du serveur : 10.4.22-MariaDB
+-- Version de PHP : 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,16 +18,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `matching game`
+-- Base de données : `hackathon`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `html`
+-- Structure de la table `scoreshtml`
 --
 
-CREATE TABLE `html` (
+CREATE TABLE `scoreshtml` (
   `id` int(11) NOT NULL,
   `iduser` int(11) NOT NULL,
   `pointHTML` int(11) NOT NULL
@@ -36,10 +36,10 @@ CREATE TABLE `html` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `php`
+-- Structure de la table `scoresphp`
 --
 
-CREATE TABLE `php` (
+CREATE TABLE `scoresphp` (
   `id` int(11) NOT NULL,
   `iduser` int(11) NOT NULL,
   `pointPHP` int(11) NOT NULL
@@ -48,7 +48,7 @@ CREATE TABLE `php` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Structure de la table `user`
 --
 
 CREATE TABLE `user` (
@@ -60,7 +60,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Déchargement des données de la table `user`
 --
 
 INSERT INTO `user` (`id`, `nom`, `email`, `pass`, `pointsUtilisateur`) VALUES
@@ -72,48 +72,68 @@ INSERT INTO `user` (`id`, `nom`, `email`, `pass`, `pointsUtilisateur`) VALUES
 (20, 'Anissa', 'anissa@gmail.com', 0, 0);
 
 --
--- Indexes for dumped tables
+-- Index pour les tables déchargées
 --
 
 --
--- Indexes for table `html`
+-- Index pour la table `scoreshtml`
 --
-ALTER TABLE `html`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `scoreshtml`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `iduser` (`iduser`),
+  ADD KEY `pointHTML` (`pointHTML`);
 
 --
--- Indexes for table `php`
+-- Index pour la table `scoresphp`
 --
-ALTER TABLE `php`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `scoresphp`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `iduser` (`iduser`),
+  ADD KEY `pointPHP` (`pointPHP`);
 
 --
--- Indexes for table `user`
+-- Index pour la table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT for table `html`
+-- AUTO_INCREMENT pour la table `scoreshtml`
 --
-ALTER TABLE `html`
+ALTER TABLE `scoreshtml`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `php`
+-- AUTO_INCREMENT pour la table `scoresphp`
 --
-ALTER TABLE `php`
+ALTER TABLE `scoresphp`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `scoreshtml`
+--
+ALTER TABLE `scoreshtml`
+  ADD CONSTRAINT `scoreshtml_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `user` (`id`) ON DELETE CASCADE;
+
+--
+-- Contraintes pour la table `scoresphp`
+--
+ALTER TABLE `scoresphp`
+  ADD CONSTRAINT `scoresphp_ibfk_1` FOREIGN KEY (`iduser`) REFERENCES `user` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
