@@ -22,13 +22,9 @@
             </div>
 
             <!-- menu -->
-            <nav>
-                <ul>
-                    <li><a href="./accueil.php">Accueil</a> </li>
-                    <li> <a href="cards.html">Jouer</a> </li>
-                    <li> <a href="connexion.html">Connexion</a> </li>
-                </ul>
-            </nav>
+            <?php
+            include("nav.php")
+            ?>
         </div>
     </header>
 
