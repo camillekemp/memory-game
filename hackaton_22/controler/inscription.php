@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "../connexion/db.php";	        
             
 // Obtenir les données du formulaire	        

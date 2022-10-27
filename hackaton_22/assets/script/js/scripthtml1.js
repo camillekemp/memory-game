@@ -37,28 +37,7 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
-  // rajouter points
-html_score.innerHTML = parseInt(html_score.innerHTML)+1; 
-  console.log("victory");
 
-  //rajouter 1 point dans la base de données
-
-  let xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function(){
-  if (xhr.readyState == 4){
-    if (xhr.status == 200|| xhr.status == 304) {
-      let reponse = xhr.responseText;
-      html_score.innerText = parseInt(reponse);
-    }
-
-    else {
-      console.log("erreur")
-    }
-      
-  }
-};
-  xhr.open('GET',`./scoresHTMLTraitement.php?score=${html_score.innerText}`);
-  xhr.send();
 
 
   resetBoard();

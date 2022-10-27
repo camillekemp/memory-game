@@ -36,7 +36,7 @@ try{
         echo ('<br />Invalid pass');
     }
     else {
-        $SESSION['loginConnecte']=$email;
+        $_SESSION['loginConnecte']=$email;
 
         header("location:../views/acceuil.php");
     }

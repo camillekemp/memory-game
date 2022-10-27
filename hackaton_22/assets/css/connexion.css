@@ -1,0 +1,176 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url("../font/Apercu Medium.otf");
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url("../font/Apercu Light.otf");
+}
+
+body {
+    width: 100%;
+    font-family: 'Apercu';
+    background-image: url("../img/bcground-connexion.jpg");
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-height: 100px;
+}
+
+.head #logo {
+    padding-top: 40px;
+    padding-left: 0;
+    margin-left: 0;
+
+}
+
+.head nav ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+li,
+a {
+    padding: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+}
+
+li a:hover {
+    color: rgb(114, 114, 177);
+}
+
+form{
+    position: absolute;
+    border: 1px solid black;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 100;
+}
+form h2 {
+
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    background-color: rgba(156, 175, 228, 0.13);
+    position: absolute;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    color: #000000;
+}
+
+
+form * {
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h2 {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 42px;
+    text-align: center;
+}
+
+form>div {
+    margin: 20px;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(197, 211, 216, 0.467);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    padding-left: 8px;
+}
+
+button {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    background-color: rgba(175, 215, 228, 0.467);
+    font-family: 'Raleway';
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgba(194, 7, 7, 0.07);
+    color: black;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+#msgErreur {
+    color: red;
+    font-weight: 600;
+}
+
+.msgInscription{
+    margin-top: 40px;
+    text-align: center;
+  width: 100%;
+}
+
+.msgInscription a {
+    font-size: 0.8rem;
+    color: rgb(97, 79, 180);
+}
+/*SEE PASSWORD POUR CONNEXION ET INSCRIPTION*/
+.icon-see, .inscription .icon-see {
+    position: relative;
+}
+
+#see {
+
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+ 
+}
+
+.inscription #see {
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+}

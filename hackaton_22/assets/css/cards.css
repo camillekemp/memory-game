@@ -1,0 +1,60 @@
+
+/* FONT */
+
+@font-face {
+    font-family: 'Apercu';
+    src: url("../font/Apercu Medium.otf");
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url("../font/Apercu Light.otf");
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Apercu';
+    background-image: url("../img/fond.jpg");
+    background-repeat: repeat-y;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+}
+
+.head #logo {
+    padding-top: 40px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.head nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li, a {
+    padding: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+}
+
+li a:hover {
+    color: rgb(114, 114, 177);
+}
+img{
+    border-radius: 20px;
+}
+
+.cards{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
