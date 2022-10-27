@@ -22,9 +22,7 @@
             </div>
 
             <!-- menu -->
-            <?php
-            include("nav.php")
-            ?>
+          
         </div>
     </header>
 
@@ -68,10 +66,10 @@
             </p>
 
             <button>S'inscrire</button>
-            <div class="msgInscription"><a href="formlogin.php">Vous avez déjà un compte? Connectez-vous</a></div>
+            <div class="msgInscription"><a href="./formlogin.php">Vous avez déjà un compte? Connectez-vous</a></div>
         </form>
     </div>
-    <script src="../assets/script/showPassword.js">
+    <script src="../assets/script/js/showPassword.js">
     </script>
 </body>
 

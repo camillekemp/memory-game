@@ -30,23 +30,16 @@
             <!-- logo -->
 
             <div id="logo">
-                <a href="./acceuil.php"><img src="./assets/img/test4.gif"></a>
+                <a href="../acceuil.php"><img src="../assets/img/test4.gif"></a>
 
             </div>
 
-            <!-- menu -->
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Accueil</a> </li>
-                    <li> <a href="cards.html">Jouer</a> </li>
-                    <li> <a href="#">Connexion</a> </li>
-                </ul>
-            </nav>
+           
         </div>
     </header>
 
     <div class="formulaire">
-        <form action="./controler/login.php" method="post">
+        <form action="../controler/login.php" method="post">
             <div>
                 <h2>Connexion</h2>
             </div>
@@ -68,10 +61,10 @@
             </div>
 
             <button>Connexion</button>
-            <div class="msgInscription"><a href="./views/forminscription.php">Vous n'avez pas de compte? Inscrivez-vous</a></div>
+            <div class="msgInscription"><a href="./forminscription.php">Vous n'avez pas de compte? Inscrivez-vous</a></div>
         </form>
     </div>
-    <script src="../assets/script/showPassword.js"></script>
+    <script src="../assets/script/js/showPassword.js"></script>
 </body>
 
 </html>
