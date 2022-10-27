@@ -5,7 +5,7 @@
 
   <title>Memory Game</title>
 
-  <link rel="stylesheet" href="styleHtml1.css">
+  <link rel="stylesheet" href="../assets/css/styleHtml1.css">
 </head>
 <body>
   <section class="game-info">
@@ -71,6 +71,6 @@
     </div>
   </section>
 
-  <script src="../html1/scripthtml1.js"></script>
+  <script src="../assets/script/js/scripthtml1.js"></script>
 </body>
 </html>

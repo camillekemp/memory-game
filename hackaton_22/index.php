@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-  
+
 
 
     </main>
-    <button onclick="location.href='./forminscription.php'">Inscription</button>
+    
+    <button onclick="location.href='./views/forminscription.php'">Inscription</button>
+    <button onclick="location.href='./views/formlogin.php'">Connexion</button>
     <!-- <button href="./html/connexion.php">Connexion</button> -->
 </body>
 </html>

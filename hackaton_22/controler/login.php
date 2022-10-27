@@ -1,13 +1,10 @@
 <?php
 
 
+session_start();
 
-// $nom=$_POST['nom'];
-// $_SESSION[$nom];
+include "../connexion/db.php";
 
-
-    
-include "./config/db.php";
 try{
     
     $email=filter_input (INPUT_POST,'email');
@@ -18,7 +15,7 @@ try{
         $db= new PDO (DBDRIVER.': host='.DBHOST.';port='.DBPORT.';dbname='.DBNAME.';charset='.DBCHARSET, DBUSER, DBPASS); 
     } 
     catch (Exception $e) {
-         die('Erreur');
+        die('Erreur');
     }
     
     
@@ -27,7 +24,6 @@ try{
     $statement= $db->prepare($sql);
     $statement->bindValue (':email',$email);
     $statement->execute();
-	    
     
     $resultat= $statement->fetchAll (PDO::FETCH_ASSOC);
     
@@ -35,12 +31,14 @@ try{
     // var_dump ($motDePasseDB);
 	// var_dump (password_verify ($pass,$motDePasseDB));
     
-    if (password_verify ($pass,$motDePasseDB)===false)
+    if (!$pass===$motDePasseDB)
     {
         echo ('<br />Invalid pass');
     }
     else {
-        header("location:./acceuil.php");
+        $SESSION['loginConnecte']=$email;
+
+        header("location:../views/acceuil.php");
     }
     
     

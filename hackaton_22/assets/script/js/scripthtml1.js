@@ -57,7 +57,7 @@ html_score.innerHTML = parseInt(html_score.innerHTML)+1;
       
   }
 };
-  xhr.open('GET',`./scoresTraitement.php?score=${html_score.innerText}`);
+  xhr.open('GET',`./scoresHTMLTraitement.php?score=${html_score.innerText}`);
   xhr.send();
 
 
