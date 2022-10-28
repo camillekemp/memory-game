@@ -18,12 +18,16 @@
 
             <div id="logo">
                 <a href="../index.html"><img src="../assets/img/test4.gif"></a>
-
             </div>
+            <!-- progressing bar -->
 
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+            
             <!-- menu -->
             <?php
-             include("nav.php")
+                include("nav.php")
             ?>
         </div>
     </header>
@@ -115,7 +119,7 @@
         </section>
     </div>
 
-    <script src="../assets/script/js/scriptphp3.js"></script>
+    <script src="../assets/script/js/scripthtml3.js"></script>
 </body>
 
 </html>

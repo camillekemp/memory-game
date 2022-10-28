@@ -1,6 +1,9 @@
 const cards = document.querySelectorAll('.memory-card');
 const html_score = document.querySelector('.score');
+const progressBarFull = document.getElementById("progressBarFull");
+let matchPoints= 0;
 console.log(html_score.value);
+const MAX_LEVEL=7;
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -30,11 +33,14 @@ var i=0;
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   let nbPaire=7; 
- 
+
   isMatch ? disableCards() : unflipCards();
 if(isMatch){
   //disableCards();
   i++;
+  // barre de progression peut donc augmenter
+  matchPoints++;
+  progressingBar();
 }
 else{
   unflipCards();
@@ -100,9 +106,9 @@ let startBtn = document.getElementById("start");
 
 
 
-//chrono en décompte de 30 secondes
+//chrono en décompte de 60 secondes
 let minutes = 0;
-let secondes = 31;
+let secondes = 61;
 
 let timeout;
 let estArrêter = true;
@@ -129,11 +135,11 @@ const defilerTemps = () => {
 
     secondes--;
 
-    if(secondes == 31){
+    if(secondes == 61){
         minutes--;
         secondes = 0;
     }
-    if(minutes == 31){
+    if(minutes == 61){
         minutes = 0;
     }
 
@@ -157,24 +163,15 @@ const defilerTemps = () => {
 }
 
 const reset = () => {
+    clearTimeout(timeout);
     chrono.textContent = "00:00";
     estArrêter = true;
     minutes = 00;
-    secondes = 00;
-    clearTimeout(timeout);
+    secondes = 60;
+    
 }
 
-//barre de progression avec ajax
-
-
-const progressBarFill=document.querySelector("#progressBar>.progress-bar-fill");
-const progressBarText=document.querySelector(".progress-bar-text");
-
-checkForMatch().addEventListener("click",progressionBar);
-
-function progressionBar(e){
-  e.preventDefault();
-  const xhr=new XMLHttpRequest();
-  xhr.open("POST","");
-  
+//barre de progression
+function progressingBar(){
+  progressBarFull.style.width = `${(matchPoints / MAX_LEVEL) * 100}%`;
 }

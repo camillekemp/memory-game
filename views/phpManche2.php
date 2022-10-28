@@ -18,12 +18,17 @@
 
             <div id="logo">
                 <a href="../index.html"><img src="../assets/img/test4.gif"></a>
-
             </div>
 
+            <!-- progressing bar -->
+
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+            
             <!-- menu -->
             <?php
-             include("nav.php")
+                include("nav.php")
             ?>
         </div>
     </header>
@@ -36,12 +41,11 @@
             <div class="score"> </div>
             <div class="time"><span></span></div>
         </div>
-       
+
             <!-- Chrono -->
     <div id="wrapper">
         <div id="chrono">00:00</div>
         <div id="buttons">
-          
 
         </div>
     </div>
@@ -93,9 +97,6 @@
                 <img class="front-face" src="../assets/img/phpManche2/10.png" alt="Ember" />
                 <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
             </div>
-
-
-
 
         </section>
     </div>

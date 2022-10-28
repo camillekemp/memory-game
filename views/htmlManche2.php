@@ -13,20 +13,24 @@
 <body>
     <header>
         <div class="head">
-
-            <!-- logo -->
-
-            <div id="logo">
-                <a><img src="../assets/img/test4.gif"></a>
-
-            </div>
-
-            <!-- menu -->
-            <?php
-             include("nav.php")
-            ?>
-        </div>
-    </header>
+    
+    <!-- logo -->
+    
+    <div id="logo">
+        <a><img src="../assets/img/test4.gif"></a>
+    
+    </div>
+    <!-- progressing bar -->
+    
+    <div id="progressBar">
+        <div id="progressBarFull"></div>
+    </div>
+    
+    <!-- menu -->
+    <?php
+        include("nav.php")
+    ?>
+</div>
     <div class=container>
 
 

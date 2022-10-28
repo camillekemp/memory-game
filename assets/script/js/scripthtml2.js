@@ -1,6 +1,9 @@
 const cards = document.querySelectorAll('.memory-card');
 const html_score = document.querySelector('.score');
+const progressBarFull = document.getElementById("progressBarFull");
+let matchPoints= 0;
 console.log(html_score.value);
+const MAX_LEVEL=5;
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -30,20 +33,25 @@ var i=0;
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   let nbPaire=5; 
- 
+
   isMatch ? disableCards() : unflipCards();
-if(isMatch){
-  //disableCards();
-  i++;
-}
-else{
-  unflipCards();
-}
+  
+  if(isMatch){
+    //disableCards();
+    i++;
+      // barre de progression peut donc augmenter
+      matchPoints++;
+      progressingBar();
+
+  }
+  else{
+    unflipCards();
+  }
 
 
   if(i==nbPaire){
     let a = document.createElement('a');
-    a.innerText = "Manche 3";
+    a.innerText = "Manche 2";
     a.title = "my title text";
     a.href = "/Hackathon/views/htmlManche3.php";
     document.body.appendChild(a);
@@ -102,7 +110,7 @@ let startBtn = document.getElementById("start");
 
 //chrono en décompte de 30 secondes
 let minutes = 0;
-let secondes = 31;
+let secondes = 46;
 
 let timeout;
 let estArrêter = true;
@@ -129,11 +137,11 @@ const defilerTemps = () => {
 
     secondes--;
 
-    if(secondes == 31){
+    if(secondes == 46){
         minutes--;
         secondes = 0;
     }
-    if(minutes == 31){
+    if(minutes == 46){
         minutes = 0;
     }
 
@@ -157,24 +165,15 @@ const defilerTemps = () => {
 }
 
 const reset = () => {
+    clearTimeout(timeout);
     chrono.textContent = "00:00";
     estArrêter = true;
     minutes = 00;
-    secondes = 00;
-    clearTimeout(timeout);
+    secondes = 45;
+    
 }
 
-//barre de progression avec ajax
-
-
-const progressBarFill=document.querySelector("#progressBar>.progress-bar-fill");
-const progressBarText=document.querySelector(".progress-bar-text");
-
-checkForMatch().addEventListener("click",progressionBar);
-
-function progressionBar(e){
-  e.preventDefault();
-  const xhr=new XMLHttpRequest();
-  xhr.open("POST","");
-  
+//barre de progression
+function progressingBar(){
+  progressBarFull.style.width = `${(matchPoints / MAX_LEVEL) * 100}%`;
 }
