@@ -26,19 +26,29 @@ function flipCard() {
   checkForMatch();
 }
 
+var i=0;
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
-  isMatch ? disableCards() : unflipCards();
-  
-      let a = document.createElement('a');
-      a.innerText = "Fin";
-      a.title = "my title text";
-      a.href = "/Hackathon/views/choixLangage.php";
-      document.body.appendChild(a);
-            a.classList.add('btn-manche');
-
+  let nbPaire=7; 
  
+  isMatch ? disableCards() : unflipCards();
+if(isMatch){
+  //disableCards();
+  i++;
+}
+else{
+  unflipCards();
+}
+
+
+  if(i==nbPaire){
+    let a = document.createElement('a');
+    a.innerText = "Fin";
+    a.title = "my title text";
+    a.href = "/Hackathon/views/bravo.php";
+    document.body.appendChild(a);
+    a.classList.add('btn-manche');
+  }
 }
 
 function disableCards() {

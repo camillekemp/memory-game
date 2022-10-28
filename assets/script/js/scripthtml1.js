@@ -18,6 +18,7 @@ function flipCard() {
     firstCard = this;
 
     return demarrer();
+    
   }
 
   // second click
@@ -25,18 +26,32 @@ function flipCard() {
 
   checkForMatch();
 }
-
+ var i=0;
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
+  let nbPaire=4; 
+ 
   isMatch ? disableCards() : unflipCards();
-  
-      let a = document.createElement('a');
-      a.innerText = "Manche 2";
-      a.title = "my title text";
-      a.href = "/Hackathon/views/htmlManche2.php";
-      document.body.appendChild(a);
-      a.classList.add('btn-manche');
+if(isMatch){
+  //disableCards();
+  i++;
+}
+else{
+  unflipCards();
+}
+
+
+  if(i==nbPaire){
+    let a = document.createElement('a');
+    a.innerText = "Manche 2";
+    a.title = "my title text";
+    a.href = "/Hackathon/views/htmlManche2.php";
+    document.body.appendChild(a);
+    a.classList.add('btn-manche');
+  }
+  //boutton
+      
+   
 
  
 }
@@ -138,7 +153,8 @@ const defilerTemps = () => {
 
     if(secondes==00){
       alert(" Désolé vous avez perdu!");
-      reset()
+      reset();
+      arreter()
     }
 
     chrono.textContent = `${minutes}:${secondes}`;

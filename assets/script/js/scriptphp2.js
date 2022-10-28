@@ -26,18 +26,29 @@ function flipCard() {
   checkForMatch();
 }
 
+var i=0;
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
+  let nbPaire=5; 
+ 
   isMatch ? disableCards() : unflipCards();
-  
-      let a = document.createElement('a');
-      a.innerText = "Manche 3";
-      a.title = "my title text";
-      a.href = "/Hackathon/views/phpManche3.php";
-      document.body.appendChild(a);
-            a.classList.add('btn-manche');
+if(isMatch){
+  //disableCards();
+  i++;
+}
+else{
+  unflipCards();
+}
 
+
+  if(i==nbPaire){
+    let a = document.createElement('a');
+    a.innerText = "Manche 3";
+    a.title = "my title text";
+    a.href = "/Hackathon/views/phpManche3.php";
+    document.body.appendChild(a);
+    a.classList.add('btn-manche');
+  }
  
 }
 
