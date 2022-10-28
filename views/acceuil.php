@@ -27,11 +27,12 @@
           <a><img src="../assets/img/test4.gif"></a>
 
         </div>
- <?php
-
-        echo "Bienvenue " . $_SESSION['nom'] . " !";
-
+        <div class="bjrSession">
+           <?php
+              echo "Bienvenue " . $_SESSION['nom'] . " !";
         ?>
+        </div>
+
         <?php
          include("nav.php")
         ?>

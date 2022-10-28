@@ -63,8 +63,8 @@ $stmt->bindValue (":pass", $password);
 // (utiliser $stmt->errorInfo())	        
 
 if ($stmt->execute()){
-    // echo "Bievenue $nom";
-    header("location:../views/acceuil.php");
+    // echo "Bienvenue $nom";
+    header("location:../views/formlogin.php");
 }
 else {
     var_dump ( $cnx->errorCode());

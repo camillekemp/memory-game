@@ -56,6 +56,7 @@ function checkForMatch() {
     a.href = "/Hackathon/views/phpManche3.php";
     document.body.appendChild(a);
     a.classList.add('btn-manche');
+    window.confetti();
   }
 
 }

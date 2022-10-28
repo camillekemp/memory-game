@@ -55,8 +55,8 @@ else{
     a.href = "/Hackathon/views/htmlManche2.php";
     document.body.appendChild(a);
     a.classList.add('btn-manche');
+    window.confetti();
   }
-  //boutton
       
 }
 
@@ -156,7 +156,7 @@ const defilerTemps = () => {
     }
 
     if(secondes==00){
-      alert(" Désolé vous avez perdu!");
+     
       reset();
       arreter()
     }

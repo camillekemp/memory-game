@@ -38,7 +38,7 @@
         </div>
 
         <div class=bloc>
-            <p>PHP (Hypertext Preprocessor) est un langage de programmation coté serveur, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP36, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. </p>
+            <p>PHP (Hypertext Preprocessor) est un langage de programmation coté serveur, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. </p>
             <div class="btn-go"><a href="/Hackathon/views/phpManche1.php">PHP</a></div>
         </div>
 

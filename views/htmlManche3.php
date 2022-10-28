@@ -118,7 +118,8 @@
 
         </section>
     </div>
-
+    <script src="../assets/script/js/confetti.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="../assets/script/js/scripthtml3.js"></script>
 </body>
 
