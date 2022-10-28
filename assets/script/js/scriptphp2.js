@@ -36,6 +36,7 @@ function checkForMatch() {
       a.title = "my title text";
       a.href = "/Hackathon/views/phpManche3.php";
       document.body.appendChild(a);
+            a.classList.add('btn-manche');
 
  
 }
