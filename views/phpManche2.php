@@ -17,7 +17,7 @@
             <!-- logo -->
 
             <div id="logo">
-                <a href="../index.html"><img src="../assets/img/test4.gif"></a>
+                <a href="/Hackathon/views/acceuil.php"><img src="../assets/img/test4.gif"></a>
             </div>
 
             <!-- progressing bar -->

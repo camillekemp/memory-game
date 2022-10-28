@@ -51,7 +51,7 @@ else{
     let a = document.createElement('a');
     a.innerText = "Fin";
     a.title = "my title text";
-    a.href = "/Hackathon/views/bravo.php";
+    a.href = "/Hackathon/views/acceuil.php";
     document.body.appendChild(a);
     a.classList.add('btn-manche');
     window.confetti();
