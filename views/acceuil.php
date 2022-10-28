@@ -29,18 +29,17 @@
         </div>
 
         <?php
-          // include("nav.php")
+        // include("nav.php")
         ?>
+        <?php
 
+        echo "Bienvenue " . $_SESSION['nom'] . " !";
+
+        ?>
 
     </header>
 
     <div class="content">
-      <?php
-
-      echo "Bienvenue " . $_SESSION['nom'] . " !";
-
-      ?>
 
       <h1 class="flip-horizontal-bottom">Matching code game</h1>
       <p>Apprend les bases de la programmation de façon ludique!</p>

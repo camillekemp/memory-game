@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,23 +7,22 @@
 @font-face {
     font-family: 'GoogleSans';
     src: url("../font/ProductSans-Regular.ttf");
-}
+} 
 
-body {
+body{
     width: 100%;
     font-family: 'GoogleSans';
     overflow: hidden;
-
-
+ 
+ background-image: url("/Hackathon/assets/img/fond.jpg");
 }
-
-#container {
-    background-image: url("/Hackathon/assets/img/fond.jpg");
+#container{
+   
     background-size: cover;
 
 }
 
-.head {
+.head{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,22 +30,21 @@ body {
     max-height: 100px;
 }
 
-.head #logo {
-    padding-top: 40px;
-    padding-left: 0;
-    margin-left: 0;
+.head #logo{
+padding-top: 40px;
+padding-left: 0;
+margin-left: 0;
 
 }
+.head
 
-.head nav ul {
+nav ul {
     font-weight: 400;
     display: flex;
     justify-content: flex-end;
 
 }
-
-li,
-a {
+li, a{
     padding: 15px;
     list-style-type: none;
     text-decoration: none;
@@ -58,8 +56,8 @@ li a:hover {
     color: rgb(114, 114, 177);
 }
 
-.content {
-
+.content{
+ 
     text-align: center;
     width: 100%;
     height: 100vh;
@@ -67,61 +65,52 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
-
-.content h1 {
-    font-size: 7rem;
-    font-weight: 600;
-    animation: flip-scale-up-hor 0.5s linear both;
-}
-
-@keyframes flip-scale-up-hor {
-    0% {
-        -webkit-transform: scale(1) rotateX(0);
-        transform: rotateX(0);
-    }
-
-    50% {
-        -webkit-transform: scale(2.5) rotateX(-90deg);
-        transform: rotateX(-90deg);
-    }
-
-    70% {
-        -webkit-transform: rotateX(-180deg);
-        transform: rotateX(-180deg);
-    }
-
-    100% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-    }
+ h1{
+    text-align:center;
+     margin-top:50px;
+     font-size: 3rem;
+     
 }
 
 
-.content p {
-    font-size: 2rem;
-    color: rgb(54, 54, 121);
-}
 
-.btn-go,
-.btn-go a {
-    margin: 70px;
+ p{
     font-size: 1.5rem;
-
+    color: rgb(54, 54, 121);
+    line-height: 1.6;
+    text-align: center;
 }
 
-.choix {
+.bloc{
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 25px;
+    font-size: 1.5rem;
+    width: 400px;
+}
+.btn-go, .btn-go a{
+   text-align: center;
+   margin-top: 40px;
+    font-size: 1.5rem;
+   
+}
+
+ .choix{
     margin-right: 10px;
 }
-
-.btn-go a {
+.btn-go a{
     color: white;
-    background-color: rgb(114, 114, 177);
-    border-radius: 5px;
-}
+     background-color: rgb(114, 114, 177);
+     border-radius: 5px;
+ }
 
-.btn-go a:hover {
+.btn-go a:hover{
     background-color: rgb(119, 197, 119);
     color: black;
+}
+.container{
+    display:flex; align-items: center; justify-content: center; margin-top:40px;
 }

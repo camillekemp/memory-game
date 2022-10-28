@@ -28,55 +28,58 @@
         </div>
     </header>
 
-    <section class="game-info">
-        <div class="info">Le score est de :</div>
-        <div class="score"> 0</div>
-        <div class="time"><span>00:00</span></div>
-    </section>
+    <div class=container>
 
-    <section class="memory-game">
 
-        <div class="memory-card" data-framework="aurelia">
-            <img class="front-face" src="../assets/img/phpManche1/1.png" alt="Aurelia" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
-        </div>
-        <div class="memory-card" data-framework="aurelia">
-            <img class="front-face" src="../assets/img/phpManche1/2.png" alt="Aurelia" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
+        <div class="game-info">
+            <div class="info">Le score est de :</div>
+            <div class="score"> 0</div>
+            <div class="time"><span>00:00</span></div>
         </div>
 
-        <div class="memory-card" data-framework="vue">
-            <img class="front-face" src="../assets/img/phpManche1/3.png" alt="Vue" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
-        </div>
-        <div class="memory-card" data-framework="vue">
-            <img class="front-face" src="../assets/img/phpManche1/4.png" alt="Vue" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
-        </div>
+        <section class="memory-game">
 
-        <div class="memory-card" data-framework="angular">
-            <img class="front-face" src="../assets/img/phpManche1/5.png" alt="Angular" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
-        </div>
-        <div class="memory-card" data-framework="angular">
-            <img class="front-face" src="../assets/img/phpManche1/6.png" alt="Angular" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
-        </div>
+            <div class="memory-card" data-framework="aurelia">
+                <img class="front-face" src="../assets/img/phpManche1/1.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
+            <div class="memory-card" data-framework="aurelia">
+                <img class="front-face" src="../assets/img/phpManche1/2.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
 
-        <div class="memory-card" data-framework="ember">
-            <img class="front-face" src="../assets/img/phpManche1/7.png" alt="Ember" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
-        </div>
-        <div class="memory-card" data-framework="ember">
-            <img class="front-face" src="../assets/img/phpManche1/8.png" alt="Ember" />
-            <img class="back-face" src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="html Badge" />
-        </div>
+            <div class="memory-card" data-framework="vue">
+                <img class="front-face" src="../assets/img/phpManche1/3.png" alt="Vue" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
+            <div class="memory-card" data-framework="vue">
+                <img class="front-face" src="../assets/img/phpManche1/4.png" alt="Vue" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
+
+            <div class="memory-card" data-framework="angular">
+                <img class="front-face" src="../assets/img/phpManche1/5.png" alt="Angular" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
+            <div class="memory-card" data-framework="angular">
+                <img class="front-face" src="../assets/img/phpManche1/6.png" alt="Angular" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
+
+            <div class="memory-card" data-framework="ember">
+                <img class="front-face" src="../assets/img/phpManche1/7.png" alt="Ember" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
+            <div class="memory-card" data-framework="ember">
+                <img class="front-face" src="../assets/img/phpManche1/8.png" alt="Ember" />
+                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+            </div>
 
 
 
 
-    </section>
-
+        </section>
+    </div>
     <script src="../assets/script/js/scriptphp1.js"></script>
 </body>
 

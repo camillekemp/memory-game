@@ -4,22 +4,31 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  background: whitesmoke;
+@font-face {
+  font-family: 'GoogleSans';
+  src: url("../font/ProductSans-Regular.ttf");
 }
 
-.score{
-  margin:auto;
+body {
+  height: 100vh;
+  font-family: 'GoogleSans';
+  background-image: url("/Hackathon/assets/img/fond.jpg");
 }
+
+.score {
+  margin: auto;
+}
+
 .memory-game {
   width: 640px;
   height: 640px;
-  margin: 250px auto auto auto;
+  margin-left: 350px;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
   perspective: 1000px;
+  margin-top: 10px;
 }
 
 .memory-card {
@@ -30,7 +39,7 @@ body {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
 
 .memory-card:active {
@@ -46,7 +55,7 @@ body {
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   position: absolute;
   border-radius: 5px;
   background: burlywood;
@@ -56,4 +65,34 @@ body {
 
 .front-face {
   transform: rotateY(180deg);
+}
+
+.container {
+  display: flex;
+}
+
+.game-info {
+  border: 1px solid rgb(70, 67, 67);
+  width: 220px;
+  margin-top: 80px;
+  margin-left: 50px;
+  height: 200px;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(54, 54, 121);
+  border-radius: 50%;
+}
+
+
+.btn-manche {
+  color: white;
+  background-color: rgb(114, 114, 177);
+  border-radius: 5px;
+  margin-left: 90vw;
+}
+
+.btn-manche:hover {
+  background-color: rgb(119, 197, 119);
+  color: black;
 }
