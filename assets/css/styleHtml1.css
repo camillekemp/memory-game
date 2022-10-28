@@ -13,6 +13,7 @@ body {
   height: 100vh;
   font-family: 'GoogleSans';
   background-image: url("/Hackathon/assets/img/fond.jpg");
+  overflow: hidden;
 }
 
 .score {
@@ -71,9 +72,10 @@ body {
   display: flex;
 }
 
-.game-info {
+#wrapper {
   border: 1px solid rgb(70, 67, 67);
-  width: 220px;
+  border-style: dotted;
+  width: 200px;
   margin-top: 80px;
   margin-left: 50px;
   height: 200px;
@@ -95,4 +97,30 @@ body {
 .btn-manche:hover {
   background-color: rgb(119, 197, 119);
   color: black;
+}
+.progress-bar{
+
+  margin-left:100px;
+  height:35px;
+  width:100px;
+  border:2px solid rgb(122, 63, 122);
+}
+
+.progress-bar-fill{
+  height:100%;
+  width:0%;
+  display:flex;
+  background-color:rgb(192, 132, 192);
+  font-weight:bold;
+
+  align-items:center;
+  transition: width 0.25s;
+}
+
+.progress-bar-text{
+  margin-left:10px;
+  font-weight:bold;
+}
+div #chrono{
+  margin-top: 7vh;
 }

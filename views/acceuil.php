@@ -27,15 +27,15 @@
           <a><img src="../assets/img/test4.gif"></a>
 
         </div>
-
-        <?php
-        // include("nav.php")
-        ?>
-        <?php
+ <?php
 
         echo "Bienvenue " . $_SESSION['nom'] . " !";
 
         ?>
+        <?php
+         include("nav.php")
+        ?>
+       
 
     </header>
 

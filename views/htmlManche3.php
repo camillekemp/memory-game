@@ -23,7 +23,7 @@
 
             <!-- menu -->
             <?php
-            // include("nav.php")
+             include("nav.php")
             ?>
         </div>
     </header>
@@ -32,73 +32,82 @@
 
 
         <div class="game-info">
-            <div class="info">Le score est de :</div>
-            <div class="score"> 0</div>
-            <div class="time"><span>00:00</span></div>
+                    <div class="info"></div>
+                    <div class="score"> </div>
+                    <div class="time"><span></span></div>
+                
         </div>
+                <!-- Chrono -->
+        <div id="wrapper">
+            <div id="chrono">00:00</div>
+            <div id="buttons">
+
+            </div>
+        </div>
+    
 
         <section class="memory-game">
 
             <div class="memory-card" data-framework="aurelia">
-                <img class="front-face" src="../assets/img/phpManche3/1.png" alt="Aurelia" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/1.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="aurelia">
-                <img class="front-face" src="../assets/img/phpManche3/2.png" alt="Aurelia" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/2.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
 
             <div class="memory-card" data-framework="vue">
-                <img class="front-face" src="../assets/img/phpManche3/3.png" alt="Vue" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/3.png" alt="Vue" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="vue">
-                <img class="front-face" src="../assets/img/phpManche3/4.png" alt="Vue" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/4.png" alt="Vue" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
 
             <div class="memory-card" data-framework="angular">
                 <img class="front-face" src="../assets/img/phpManche3/5.png" alt="Angular" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="angular">
-                <img class="front-face" src="../assets/img/phpManche3/6.png" alt="Angular" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/6.png" alt="Angular" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
 
             <div class="memory-card" data-framework="ember">
-                <img class="front-face" src="../assets/img/phpManche3/7.png" alt="Ember" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/7.png" alt="Ember" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="ember">
-                <img class="front-face" src="../assets/img/phpManche3/8.png" alt="Ember" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/8.png" alt="Ember" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
 
             <div class="memory-card" data-framework="rr">
-                <img class="front-face" src="../assets/img/phpManche3/9.png" alt="Ember" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/9.png" alt="Ember" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
 
             <div class="memory-card" data-framework="rr">
-                <img class="front-face" src="../assets/img/phpManche3/10.png" alt="Ember" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/10.png" alt="Ember" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="tt">
-                <img class="front-face" src="../assets/img/phpManche3/11.png" alt="Aurelia" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/11.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="tt">
-                <img class="front-face" src="../assets/img/phpManche3/12.png" alt="Aurelia" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/12.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="yy">
-                <img class="front-face" src="../assets/img/phpManche3/13.png" alt="Aurelia" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/13.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
             <div class="memory-card" data-framework="yy">
-                <img class="front-face" src="../assets/img/phpManche3/14.png" alt="Aurelia" />
-                <img class="back-face" src="../assets/img/htmlManche1/backPHP.png" alt="html Badge" />
+                <img class="front-face" src="../assets/img/htmlManche3/14.png" alt="Aurelia" />
+                <img class="back-face" src="../assets/img/htmlManche1/backHTML.png" alt="html Badge" />
             </div>
 
 

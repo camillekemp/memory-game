@@ -23,7 +23,7 @@
 
             <!-- menu -->
             <?php
-            // include("nav.php")
+             include("nav.php")
             ?>
         </div>
     </header>
@@ -32,10 +32,19 @@
 
 
         <div class="game-info">
-            <div class="info">Le score est de :</div>
-            <div class="score"> 0</div>
-            <div class="time"><span>00:00</span></div>
+            <div class="info"></div>
+            <div class="score"> </div>
+            <div class="time"><span></span></div>
         </div>
+       
+            <!-- Chrono -->
+    <div id="wrapper">
+        <div id="chrono">00:00</div>
+        <div id="buttons">
+          
+
+        </div>
+    </div>
 
         <section class="memory-game">
 

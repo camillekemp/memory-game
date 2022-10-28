@@ -11,9 +11,16 @@
 
 
 
-    </main>
-    
-    <?php include("./views/formlogin.php")?>
+  
+    <?php
+        if (isset($_POST['p'])) {
+            include "./" . $_POST['p'] . ".php";
+        } else {
+            include "./views/formlogin.php";
+        }
+        ?>
+   
+<!-- include("./views/formlogin.php") -->
     <!-- <button onclick="location.href='./views/forminscription.php'">Inscription</button> -->
     <!-- <button onclick="location.href='./views/formlogin.php'">Connexion</button> -->
     <!-- <button href="./html/connexion.php">Connexion</button> -->

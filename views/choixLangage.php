@@ -22,7 +22,7 @@
 
             <!-- menu -->
             <?php
-            // include("nav.php")
+             include("nav.php")
             ?>
         </div>
     </header>
